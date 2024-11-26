@@ -74,4 +74,12 @@ icewm &
 " > /root/.vnc/xstartup
 ```
 
+```
+docker export -o centos7-vnc.tar fluent
+docker import centos7-vnc.tar rm314159/centos7-vnc:latest
+docker run -d -it -p 5959:5901 --name fluent --entrypoint /bin/bash rm314159/centos7-vnc:latest
+docker start -i fluent
+```
+
+
 
