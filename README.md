@@ -81,5 +81,6 @@ docker run -d -it -p 5959:5901 --name fluent --entrypoint /bin/bash rm314159/cen
 docker start -i fluent
 ```
 
+Here the purchased Fluent 6.3 in package and license can be installed.
 
 
